@@ -9,9 +9,9 @@ function showNotice() {
   });
 }
 
-function showError() {
-  const myError = error({
-    text: 'No matches found',
+function showError(message) {
+  error({
+    text: message,
     delay: 3000,
   });
 }
