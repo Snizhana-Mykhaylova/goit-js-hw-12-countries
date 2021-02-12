@@ -4,7 +4,10 @@ import countriesListTpl from '../templates/countriesList.hbs';
 import { showNotice } from './notifications';
 
 function updateMarkup(items) {
-  console.log(items);
+  if (items === undefined) {
+    return;
+  }
+
   if (items.length >= 10) {
     showNotice();
   }
